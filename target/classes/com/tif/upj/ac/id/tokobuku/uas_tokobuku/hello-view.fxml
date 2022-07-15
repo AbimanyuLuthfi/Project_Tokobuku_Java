@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: FFFACD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tif.upj.ac.id.tokobuku.uas_tokobuku.ModifikasiList">
+    <children>
+        <Label fx:id="lblPesan" layoutX="217.0" layoutY="14.0" text="Toko Buku Arcilla">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="22.0" layoutY="105.0" text="Jenis Buku" />
+        <Label layoutX="20.0" layoutY="139.0" text="Nama Buku" />
+        <Label layoutX="324.0" layoutY="139.0" text="Harga Buku" />
+        <Label layoutX="328.0" layoutY="105.0" text="Stok Buku" />
+      <TextField fx:id="txtId" layoutX="100.0" layoutY="68.0" prefHeight="25.0" prefWidth="70.0" />
+        <TextField fx:id="Jenis_Buku" layoutX="100.0" layoutY="101.0" prefHeight="25.0" prefWidth="176.0" />
+        <TextField fx:id="Nama_Buku" layoutX="100.0" layoutY="135.0" prefHeight="25.0" prefWidth="176.0" />
+        <TextField fx:id="Stok_Buku" layoutX="408.0" layoutY="101.0" prefHeight="25.0" prefWidth="53.0" />
+        <TextField fx:id="Harga_Buku" layoutX="408.0" layoutY="136.0" prefHeight="25.0" prefWidth="125.0" />
+        <Button fx:id="Simpan" layoutX="29.0" layoutY="179.0" mnemonicParsing="false" onAction="#SimpanOnClick" prefHeight="25.0" prefWidth="55.0" text="Save" />
+        <Button fx:id="Reset" layoutX="95.0" layoutY="179.0" mnemonicParsing="false" onAction="#ResetOnClick" prefHeight="25.0" prefWidth="55.0" text="Reset" />
+      <Button fx:id="Update" layoutX="162.0" layoutY="179.0" mnemonicParsing="false" onAction="#UpdateOnClick" prefHeight="25.0" prefWidth="55.0" text="Update" />
+        <Button fx:id="Delete" layoutX="228.0" layoutY="179.0" mnemonicParsing="false" onAction="#DeleteOnClick" prefHeight="25.0" prefWidth="55.0" text="Delete" />
+        <Label fx:id="List" alignment="TOP_LEFT" layoutX="380.0" layoutY="188.0" prefHeight="74.0" prefWidth="162.0" style="-fx-background-color: CCFFFF;" text="Buku" />
+        <Label layoutX="22.0" layoutY="72.0" text="ID Buku" />
+        <Label layoutX="315.0" layoutY="188.0" text="Jenis Buku" />
+        <Label layoutX="312.0" layoutY="206.0" text="Nama Buku" />
+        <Label layoutX="316.0" layoutY="224.0" text="Stok Buku" />
+        <Label layoutX="312.0" layoutY="243.0" text="Harga Buku" />
+        <Label layoutX="30.0" layoutY="248.0" text="Daftar Buku" />
+      <Button fx:id="Button_Back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Button_Back_OnClick" text="Back" />
+      <Button fx:id="View" layoutX="30.0" layoutY="213.0" mnemonicParsing="false" onAction="#View_OnClick" prefHeight="25.0" prefWidth="55.0" text="View" />
+      <TableView fx:id="tableData" layoutX="30.0" layoutY="276.0" prefHeight="160.0" prefWidth="540.0">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="60.0" text="Id" />
+          <TableColumn fx:id="colJenis_Buku" prefWidth="120.0" text="Jenis Buku" />
+          <TableColumn fx:id="colNama_Buku" prefWidth="150.0" text="Nama Buku" />
+            <TableColumn fx:id="colStok_Buku" prefWidth="90.0" text="Stok Buku" />
+            <TableColumn fx:id="colHarga_Buku" prefWidth="120.0" text="Harga Buku" />
+        </columns>
+      </TableView>
+    </children>
+</Pane>
